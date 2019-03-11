@@ -32,7 +32,7 @@ class MyFrame(wx.Frame):  #GUI Building
         input = input.lower()
         #print("It worked")
         try:  # wolframalpha
-            app_id = "466WA2-E5H37P3EXH"
+            app_id = "<wolframalpha_app_ID>"
             client = wolframalpha.Client(app_id)
             res = client.query(input)
             answer = next(res.results).text
